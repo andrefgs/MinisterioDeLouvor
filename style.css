@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-/* Estilo para o tema claro */
 body {
     max-width: 100%;
     margin: 0 auto;
@@ -11,13 +10,11 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
-/* Estilo para o modo escuro */
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
 
-/* Ajustando os itens da lista no modo escuro */
 .dark-mode li {
     background: #1e1e1e;
     color: #ffffff;
@@ -53,12 +50,11 @@ li a {
 
 li:hover {
     background: #f0f0f0;
-    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    transform: scale(1.05);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
-/* Estilo do botão */
 button {
     background-color: #333;
     color: white;
@@ -71,7 +67,6 @@ button {
     transition: background 0.3s, color 0.3s;
 }
 
-/* Quando estiver no modo escuro */
 .dark-mode button {
     background-color: #f8f9fa;
     color: #333;
