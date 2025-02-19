@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Estilo para o tema claro */
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Estilo para o modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Ajustando os itens da lista no modo escuro */
+.dark-mode li {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+    background: #ffffff;
+    padding: 10px;
+    margin: 5px auto;
+    width: 40%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 900;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+li:hover {
+    background: #f0f0f0;
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo do botão */
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Quando estiver no modo escuro */
+.dark-mode button {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.dark-mode li {
+    background: #1e1e1e;
+}
+
+.dark-mode li a {
+    color: #ffffff;
+}
+
+.dark-mode li:hover {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    li {
+        width: 60%; 
+        font-size: 16px; 
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 60%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    li {
+        width: 70%; 
+    }
+
+    button {
+        width: 70%;
+    }
+}
