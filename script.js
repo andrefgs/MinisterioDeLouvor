@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function toggleDarkMode() {
         document.body.classList.toggle("dark-mode");
 
-        // Muda o texto do botão com base no modo atual
         if (document.body.classList.contains("dark-mode")) {
             button.textContent = "☀️ Modo Claro";
         } else {
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Adiciona evento de clique ao botão
     button.addEventListener("click", toggleDarkMode);
 });
 
